@@ -6,9 +6,10 @@
 }
 
 body {
-  background: #fdfdfd;
+  background: #201d53;
   font-family: "Nunito", sans-serif;
-  font-size: 1rem;
+  font-size: 2rem !important;
+  color: aliceblue;
 }
 
 main {

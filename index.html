@@ -17,6 +17,21 @@
     <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
     <meta name="theme-color" content="#db4938" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
     <title>Event PWA App</title>
     <link
       rel="stylesheet"
@@ -37,70 +52,240 @@
           <i class="fas fa-sign-out-alt"></i>
         </a>
       </header>
-      <nav>
-        <ul>
-          <li>
-            <a class="toggle">
-              <span class="icon"><i class="fas fa-bars"></i></span>
-              <span class="title">Menu</span>
-            </a>
+      <nav
+        data-mdb-sidenav-init
+        id="sidenav-8"
+        class="sidenav"
+        data-scroll-container="#scroll-container2"
+        data-mdb-mode="side"
+      >
+        <div class="text-center">
+          <h3 class="py-4">Examples</h3>
+          <hr class="m-0" />
+        </div>
+        <ul id="scroll-container2" class="sidenav-menu">
+          <li class="sidenav-item">
+            <a class="sidenav-link"
+              ><i class="fas fa-grin fa-fw me-3"></i
+              ><span>Scrolling Category 1</span></a
+            >
+            <ul class="sidenav-collapse scroll-section">
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 1</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 2</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 3</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 4</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 5</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 6</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="/ak_pwa_host/index.html">
-              <span class="icon"><i class="fas fa-home"></i></span>
-              <span class="title">Home</span>
-            </a>
+          <li class="sidenav-item">
+            <a class="sidenav-link"
+              ><i class="fas fa-grin fa-fw me-3"></i
+              ><span>Scrolling Category 2</span></a
+            >
+            <ul class="sidenav-collapse scroll-section">
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 1</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 2</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 3</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 4</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 5</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 6</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="/ak_pwa_host/aboutus.html">
-              <span class="icon"><i class="fas fa-user"></i></span>
-              <span class="title">ABOUT US</span>
-            </a>
+          <li class="sidenav-item">
+            <a class="sidenav-link"
+              ><i class="fas fa-grin fa-fw me-3"></i
+              ><span>Scrolling Category 2</span></a
+            >
+            <ul class="sidenav-collapse scroll-section">
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 1</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 2</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 3</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 4</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 5</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 6</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-envelope"></i></span>
-              <span class="title">AGENDA</span>
-            </a>
+          <li class="sidenav-item">
+            <a class="sidenav-link"
+              ><i class="fas fa-grin fa-fw me-3"></i
+              ><span>Scrolling Category 3</span></a
+            >
+            <ul class="sidenav-collapse scroll-section">
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 1</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 2</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 3</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 4</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 5</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 6</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-info"></i></span>
-              <span class="title">SPEAKERS</span>
-            </a>
+          <li class="sidenav-item">
+            <a class="sidenav-link"
+              ><i class="fas fa-grin fa-fw me-3"></i
+              ><span>Scrolling Category 4</span></a
+            >
+            <ul class="sidenav-collapse scroll-section">
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 1</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 2</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 3</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 4</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 5</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 6</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-cog"></i></span>
-              <span class="title">BLOG</span>
-            </a>
+          <li class="sidenav-item">
+            <a class="sidenav-link"
+              ><i class="fas fa-grin fa-fw me-3"></i
+              ><span>Scrolling Category 5</span></a
+            >
+            <ul class="sidenav-collapse scroll-section">
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 1</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 2</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 3</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 4</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 5</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 6</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="/ak_pwa_host/contactus.html">
-              <span class="icon"><i class="fas fa-lock"></i></span>
-              <span class="title">CONTACT</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-              <span class="title">Sign Out</span>
-            </a>
+          <li class="sidenav-item">
+            <a class="sidenav-link"
+              ><i class="fas fa-grin fa-fw me-3"></i
+              ><span>Scrolling Category 6</span></a
+            >
+            <ul class="sidenav-collapse scroll-section">
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 1</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 2</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 3</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 4</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 5</a>
+              </li>
+              <li class="sidenav-item">
+                <a class="sidenav-link">Link 6</a>
+              </li>
+            </ul>
           </li>
         </ul>
+
+        <div class="text-center" style="min-height: 3rem">
+          <hr class="mt-0 mb-2" />
+          <small>mdbootstrap.com</small>
+        </div>
       </nav>
+      <!-- Sidenav-->
+
+      <div style="padding: 20px" class="text-center">
+        <button
+          data-mdb-toggle="sidenav"
+          data-mdb-target="#sidenav-8"
+          class="btn btn-primary"
+          aria-controls="#sidenav-8"
+          aria-haspopup="true"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="d-flex justify-content-center my-5"></div>
+      </div>
 
       <div class="container"></div>
     </main>
     <script src="js/app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"
+    ></script>
     <script>
-      var getSidebar = document.querySelector("nav");
-      var getToggle = document.getElementsByClassName("toggle");
-      for (var i = 0; i <= getToggle.length; i++) {
-        getToggle[i].addEventListener("click", function () {
-          getSidebar.classList.toggle("active");
-        });
-      }
+      // Initialization for ES Users
+      import { Sidenav, PerfectScrollbar, initMDB } from "mdb-ui-kit";
+
+      initMDB({ Sidenav });
+
+      const scrollSection = document.getElementsByClassName("scroll-section");
+
+      scrollSection.forEach((el) => {
+        const ps = new PerfectScrollbar(el, { suppressScrollX: true });
+      });
     </script>
   </body>
 </html>

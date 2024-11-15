@@ -16,11 +16,22 @@ main {
   margin: auto;
   padding: 0.5rem;
   text-align: center;
+  background-color: #120d5e;
+  height: 100vh;
+}
+.headerbar {
+  /* margin-top: -77px; */
+  padding: 15px;
+  /* margin-top: 20px; */
+  background: #111111ab;
+  position: relative;
+  /* width: 100%; */
+  margin: 0;
 }
 .sidebar {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -58,6 +69,9 @@ main {
   color: white;
   padding: 10px 15px;
   border: none;
+  /* position: absolute;
+  left: 50px; */
+  margin-right: 100%;
 }
 
 .openbtn:hover {

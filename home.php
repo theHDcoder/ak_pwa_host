@@ -30,14 +30,14 @@
     <main>
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a class="sidebar-link" href="/ak_pwa_host/home.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
-        <a href="/ak_pwa_host/aboutus.html"
+        <a class="sidebar-link active" href="/ak_pwa_host/home.php"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="/ak_pwa_host/aboutus.php"
           ><i class="fa-regular fa-address-card"></i><span>ABOUT US</span></a
         >
         <a class="sidebar-link"  href="#"><i class="fa-solid fa-calendar-days"></i><span>AGENDA</span></a>
         <a href="#"><i class="fa-solid fa-handshake"></i><span>SPEAKERS</span></a>
         <a class="sidebar-link"  href="#"><i class="fa-solid fa-image"></i><span>BLOG</span></a>
-        <a class="sidebar-link active" href="/ak_pwa_host/contactus.html"><i class="fa-solid fa-address-book"></i></i> <span>CONTACT US</span></a>
+        <a class="sidebar-link" href="/ak_pwa_host/contactus.php"><i class="fa-solid fa-address-book"></i></i> <span>CONTACT US</span></a>
         <a class="sidebar-link" href="#"
           ><i class="fas fa-sign-out-alt"></i> <span>SIGN OUT</span></a
         >
@@ -50,7 +50,7 @@
         </button>
       </div>
       <div class="content" style="color: aliceblue">
-        <h2>Welcome Contact us</h2>
+        <h2>Welcome Home</h2>
         <p>
           Click on the hamburger menu/bar icon to open the sidebar, and push
           this content to the right.

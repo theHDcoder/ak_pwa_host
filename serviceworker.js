@@ -18,10 +18,18 @@ const assets = [
 ];
 
 self.addEventListener("install", (installEvent) => {
-  installEvent.waitUntil(
-    caches.open(staticDevCoffee).then((cache) => {
-      cache.addAll(assets);
-    })
+  // installEvent.waitUntil(
+  //   caches.open(staticDevCoffee).then((cache) => {
+  //     cache.addAll(assets);
+  //   })
+  // );
+  //no cacche method
+  self.skipWaiting();
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    clients.claim() // Take control of all open pages immediately
   );
 });
 

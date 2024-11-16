@@ -28,77 +28,47 @@
   </head>
   <body>
     <main>
-      <header>
-        <div class="toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-        <h3>Dashboard</h3>
-        <a href="#">
-          <i class="fas fa-sign-out-alt"></i>
-        </a>
-      </header>
-      <nav>
-        <ul>
-          <li>
-            <a class="toggle">
-              <span class="icon"><i class="fas fa-bars"></i></span>
-              <span class="title">Menu</span>
-            </a>
-          </li>
-          <li>
-            <a href="/ak_pwa_host/index.html">
-              <span class="icon"><i class="fas fa-home"></i></span>
-              <span class="title">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="/ak_pwa_host/aboutus.html">
-              <span class="icon"><i class="fas fa-user"></i></span>
-              <span class="title">ABOUT US</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-envelope"></i></span>
-              <span class="title">AGENDA</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-info"></i></span>
-              <span class="title">SPEAKERS</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-cog"></i></span>
-              <span class="title">BLOG</span>
-            </a>
-          </li>
-          <li>
-            <a href="/ak_pwa_host/contactus.html">
-              <span class="icon"><i class="fas fa-lock"></i></span>
-              <span class="title">CONTACT</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
-              <span class="title">Sign Out</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <h1>CONTACT US</h1>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="sidebar-link" href="/ak_pwa_host/home.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="/ak_pwa_host/aboutus.html"
+          ><i class="fa-regular fa-address-card"></i><span>ABOUT US</span></a
+        >
+        <a class="sidebar-link"  href="#"><i class="fa-solid fa-calendar-days"></i><span>AGENDA</span></a>
+        <a href="#"><i class="fa-solid fa-handshake"></i><span>SPEAKERS</span></a>
+        <a class="sidebar-link"  href="#"><i class="fa-solid fa-image"></i><span>BLOG</span></a>
+        <a class="sidebar-link active" href="/ak_pwa_host/contactus.html"><i class="fa-solid fa-address-book"></i></i> <span>CONTACT US</span></a>
+        <a class="sidebar-link" href="#"
+          ><i class="fas fa-sign-out-alt"></i> <span>SIGN OUT</span></a
+        >
+      </div>
+      <div class="headerbar">
+        <button class="openbtn" onclick="openNav()">
+          <label for="check">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </button>
+      </div>
+      <div class="content" style="color: aliceblue">
+        <h2>Welcome Contact us</h2>
+        <p>
+          Click on the hamburger menu/bar icon to open the sidebar, and push
+          this content to the right.
+        </p>
+      </div>
     </main>
+
     <script>
-      var getSidebar = document.querySelector("nav");
-      var getToggle = document.getElementsByClassName("toggle");
-      for (var i = 0; i <= getToggle.length; i++) {
-        getToggle[i].addEventListener("click", function () {
-          getSidebar.classList.toggle("active");
-        });
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
       }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
+      const links = document.querySelectorAll('.sidebar-link');
+
+
     </script>
   </body>
 </html>
